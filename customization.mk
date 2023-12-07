@@ -20,3 +20,5 @@ PRODUCT_COPY_FILES += \
 
 # Kernel Headers
 TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
+
+TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
