@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+CUST_PATH := device/sony/customization
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
+
+# Prebuilt Kernel
+TARGET_PREBUILT_KERNEL = $(CUST_PATH)/prebuilt/kernel-dtb-$(TARGET_DEVICE)
+BOARD_PREBUILT_DTBOIMAGE ?= $(CUST_PATH)/prebuilt/dtbo-$(TARGET_DEVICE).img
