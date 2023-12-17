@@ -25,3 +25,7 @@ PRODUCT_COPY_FILES += \
 TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
 TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
+
+# Needed for AOSP SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno
