@@ -17,3 +17,7 @@ CUST_PATH := device/sony/customization
 PRODUCT_COPY_FILES += \
    $(CUST_PATH)/rootdir/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
    $(CUST_PATH)/rootdir/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so
+
+# Needed for AOSP SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno
