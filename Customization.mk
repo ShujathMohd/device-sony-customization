@@ -22,3 +22,5 @@ BUILD_BROKEN_DUP_RULES := true
 # Prebuilt Kernel
 TARGET_PREBUILT_KERNEL = $(CUST_PATH)/prebuilt/kernel-dtb-$(TARGET_DEVICE)
 BOARD_PREBUILT_DTBOIMAGE ?= $(CUST_PATH)/prebuilt/dtbo-$(TARGET_DEVICE).img
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/vendor
