@@ -29,3 +29,11 @@ TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 # Needed for AOSP SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno
+
+
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    ro.secure=0 \
