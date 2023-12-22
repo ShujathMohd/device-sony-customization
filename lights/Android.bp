@@ -28,4 +28,5 @@ cc_binary {
         "android.hardware.light@2.0",
     ],
     proprietary: true,
+    overrides: ["android.hardware.light@2.0-service.sony"],
 }
