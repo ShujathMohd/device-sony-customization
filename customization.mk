@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.sony_sdm845
+    android.hardware.light@2.0-service.sony_sdm845 \
+    lights.sdm845
 
 # Live Display
 PRODUCT_PACKAGES += \
