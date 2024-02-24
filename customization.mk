@@ -49,3 +49,7 @@ PRODUCT_PACKAGES += \
 # Live Display
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.sony
+
+# DEX2OAT
+PRODUCT_PROPERTY_OVERRIDES += \
+   dalvik.vm.dex2oat64.enabled=true
