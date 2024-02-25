@@ -30,9 +30,10 @@ TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
 TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 
-# Needed for AOSP SurfaceFlinger
+# SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.egl=adreno
+    ro.hardware.egl=adreno \
+    ro.surface_flinger.enable_frame_rate_override=false
 
 # USB debugging
 PRODUCT_PROPERTY_OVERRIDES += \
