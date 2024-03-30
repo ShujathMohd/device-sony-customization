@@ -57,4 +57,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RRO Overlay
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiOverlay \
+    TetheringConfigOverlay
