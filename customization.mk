@@ -54,3 +54,7 @@ PRODUCT_PACKAGES += \
 # DEX2OAT
 PRODUCT_PROPERTY_OVERRIDES += \
    dalvik.vm.dex2oat64.enabled=true
+
+# RRO Overlay
+PRODUCT_PACKAGES += \
+    WifiOverlay
