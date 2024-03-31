@@ -59,3 +59,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
+
+# Verity
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.apk_verity.mode=2
+
+
