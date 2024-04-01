@@ -1,0 +1,1 @@
+get_prop(hal_modemsw_default, telephony_config_prop)
