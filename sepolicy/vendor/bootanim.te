@@ -1,2 +1,5 @@
 # b/149063530
 dontaudit bootanim sysfs_msm_subsys:dir search;
+
+# Bootanim should not be reading default vendor-defined properties.
+dontaudit bootanim vendor_default_prop:file { getattr map open };
