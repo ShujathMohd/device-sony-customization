@@ -15,7 +15,7 @@
 CUST_PATH := device/sony/customization
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/common_full_phone.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
