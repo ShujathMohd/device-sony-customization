@@ -16,6 +16,8 @@ CUST_PATH := device/sony/customization
 
 -include vendor/lineage/config/BoardConfigSoong.mk
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(CUST_PATH)/device_framework_compatibility_matrix.xml
+
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
