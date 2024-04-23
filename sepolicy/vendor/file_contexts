@@ -128,3 +128,13 @@
 /odm/bin/tftp_server                            u:object_r:rfs_access_exec:s0
 
 /odm/firmware(/.*)?                             u:object_r:vendor_firmware_file:s0
+
+# files in /vendor
+/(system/vendor|vendor)/bin/macaddrsetup                                                     u:object_r:macaddrsetup_exec:s0
+/(system/vendor|vendor)/bin/rdclean\.sh                                                      u:object_r:rdclean_exec:s0
+/(system/vendor|vendor)/bin/init\.qcom\.slpistart\.sh                                        u:object_r:init-qcom-slpistart-sh_exec:s0
+/(system/vendor|vendor)/bin/init\.qcom\.adspstart\.sh                                        u:object_r:init-qcom-adspstart-sh_exec:s0
+/(system/vendor|vendor)/bin/init\.qcom\.cdspstart\.sh                                        u:object_r:init-qcom-cdspstart-sh_exec:s0
+/(system/vendor|vendor)/bin/init\.qcom\.ipastart\.sh                                         u:object_r:init-qcom-ipastart-sh_exec:s0
+/(system/vendor|vendor)/bin/timekeep                                                         u:object_r:timekeep_exec:s0
+/(system/vendor|vendor)/bin/hw/android\.hardware\.health@2\.0-service\.sony                  u:object_r:hal_health_default_exec:s0
