@@ -84,3 +84,47 @@
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.modemswitcher@1\.0-service               u:object_r:hal_modemswitcher_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power@1\.3-service\.sony_sdm845-libperfmgr            u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                       u:object_r:hal_neuralnetworks_default_exec:s0
+
+/(system/vendor|vendor)/bin/hw/android\.hardware\.power@1\.3-service\.sony                   u:object_r:hal_power_default_exec:s0
+/(system/vendor|vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sony                   u:object_r:hal_light_default_exec:s0
+/(system/vendor|vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sony u:object_r:hal_fingerprint_default_exec:s0
+
+
+# files in /odm
+/odm/bin/hw/vendor\.somc\.hardware\.modemswitcher@1\.0-service    u:object_r:modem-switcher_exec:s0
+/odm/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service           u:object_r:hal_miscta_default_exec:s0
+/odm/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service-qti    u:object_r:hal_keymaster_qti_exec:s0
+/odm/bin/hw/qcrild                              u:object_r:rild_exec:s0
+/odm/bin/adpl                                   u:object_r:adpl_exec:s0
+/odm/bin/adsprpcd                               u:object_r:adsprpcd_exec:s0
+/odm/bin/ATFWD-daemon                           u:object_r:atfwd_exec:s0
+/odm/bin/cdsprpcd                               u:object_r:cdsprpcd_exec:s0
+/odm/bin/cnd                                    u:object_r:cnd_exec:s0
+/odm/bin/cnss-daemon                            u:object_r:wcnss_service_exec:s0
+#/odm/bin/dpmd                                   u:object_r:vendor_dpmd_exec:s0
+/odm/bin/dpmQmiMgr                              u:object_r:hal_dpmQmiMgr_exec:s0
+/odm/bin/imsdatadaemon                          u:object_r:ims_exec:s0
+/odm/bin/imsqmidaemon                           u:object_r:ims_exec:s0
+/odm/bin/imsrcsd                                u:object_r:hal_rcsservice_exec:s0
+/odm/bin/ims_rtp_daemon                         u:object_r:hal_imsrtp_exec:s0
+/odm/bin/irsc_util                              u:object_r:irsc_util_exec:s0
+/odm/bin/ks                                     u:object_r:mdm_helper_exec:s0
+/odm/bin/mdm_helper                             u:object_r:mdm_helper_exec:s0
+/odm/bin/mlog_qmi_service                       u:object_r:mlog_qmi_service_exec:s0
+/odm/bin/msm_irqbalance                         u:object_r:vendor_msm_irqbalanced_exec:s0
+/odm/bin/netmgrd                                u:object_r:netmgrd_exec:s0
+/odm/bin/pd-mapper                              u:object_r:vendor_pd_mapper_exec:s0
+/odm/bin/pm-proxy                               u:object_r:vendor_per_mgr_exec:s0
+/odm/bin/pm-service                             u:object_r:vendor_per_mgr_exec:s0
+/odm/bin/qrtr-ns                                u:object_r:qrtr_exec:s0
+/odm/bin/qseecomd                               u:object_r:tee_exec:s0
+/odm/bin/qti                                    u:object_r:qti_exec:s0
+/odm/bin/rmt_storage                            u:object_r:rmt_storage_exec:s0
+/odm/bin/sct_service                            u:object_r:sct_service_exec:s0
+/odm/bin/sony-modem-switcher                    u:object_r:modem-switcher_exec:s0
+/odm/bin/sscrpcd                                u:object_r:sensors_exec:s0
+/odm/bin/tad_static                             u:object_r:tad_exec:s0
+/odm/bin/ta_qmi_service                         u:object_r:ta_qmi_service_exec:s0
+/odm/bin/tftp_server                            u:object_r:rfs_access_exec:s0
+
+/odm/firmware(/.*)?                             u:object_r:vendor_firmware_file:s0
