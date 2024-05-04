@@ -30,3 +30,5 @@ get_prop(vendor_init, vts_status_prop)
 
 # Allow vendor_init to read cust_debug_system_prop related to modem switcher
 get_prop(vendor_init, cust_debug_system_prop)
+
+get_prop(vendor_init, persist_debug_prop)
