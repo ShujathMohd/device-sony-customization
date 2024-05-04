@@ -6,4 +6,19 @@ init_daemon_domain(macaddrsetup)
 unix_socket_connect(macaddrsetup, tad, tad)
 
 #============= macaddrsetup ==============
-allow macaddrsetup self:capability { chown fowner fsetid };
+allow macaddrsetup self:capability { chown fowner fsetid net_admin net_raw };
+
+allow macaddrsetup vendor_bt_data_file:dir rw_dir_perms;
+allow macaddrsetup vendor_bt_data_file:file create_file_perms;
+
+allow macaddrsetup wifi_vendor_data_file:dir rw_dir_perms;
+allow macaddrsetup wifi_vendor_data_file:file create_file_perms;
+
+allow macaddrsetup hostapd_data_file:dir rw_dir_perms;
+allow macaddrsetup hostapd_data_file:file create_file_perms;
+
+allow macaddrsetup wpa_data_file:dir rw_dir_perms;
+allow macaddrsetup wpa_data_file:file create_file_perms;
+
+allow macaddrsetup self:udp_socket create;
+
