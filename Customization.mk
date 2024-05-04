@@ -26,7 +26,10 @@ BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 TARGET_PREBUILT_KERNEL = $(CUST_PATH)/prebuilt/kernel-dtb-$(TARGET_DEVICE)
 BOARD_PREBUILT_DTBOIMAGE ?= $(CUST_PATH)/prebuilt/dtbo-$(TARGET_DEVICE).img
 
+include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
+-include device/lineage/sepolicy/qcom/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/private
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/public
 
 BUILD_BROKEN_PLUGIN_VALIDATION := soong-qti_kernel_headers_defaults
