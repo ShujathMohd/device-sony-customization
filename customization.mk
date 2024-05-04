@@ -47,10 +47,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.sony_sdm845 \
     lights.sdm845
 
-# Live Display
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.sony
-
 # DEX2OAT
 PRODUCT_PROPERTY_OVERRIDES += \
    dalvik.vm.dex2oat64.enabled=true
