@@ -7,6 +7,7 @@ set_prop(vendor_init, vendor_bt_a2dp_prop)
 set_prop(vendor_init, vendor_camera_sensor_prop)
 set_prop(vendor_init, vendor_dpm_feature_prop)
 set_prop(vendor_init, vendor_radio_prop)
+set_prop(vendor_init, audio_prop)
 
 allow vendor_init sony_camera_device:chr_file setattr;
 
@@ -34,3 +35,4 @@ get_prop(vendor_init, cust_debug_system_prop)
 
 get_prop(vendor_init, persist_debug_prop)
 
+get_prop(vendor_init, vendor_somc_cust_prop)
