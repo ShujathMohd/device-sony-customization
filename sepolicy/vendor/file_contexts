@@ -8,6 +8,8 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/Qnovo      u:object_r:qnovo_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/TA         u:object_r:tad_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/persist         u:object_r:persist_block_device:s0
+/dev/fingerprint                               		  u:object_r:fingerprint_device:s0
+
 
 # Dev
 /dev/socket/tad                                                 u:object_r:tad_socket:s0
@@ -16,6 +18,7 @@
 /data/vendor/etc/wlan.*                                         u:object_r:wifi_vendor_data_file:s0
 /data/vendor/etc/bluetooth.*                                    u:object_r:bluetooth_vendor_data_file:s0
 /data/vendor/fpc(/.*)?                                          u:object_r:fpc_vendor_data_file:s0
+
 
 # FPC fingerprint socket
 /dev/socket/fpc_oem		u:object_r:hal_fpc_fingerprint_socket:s0
