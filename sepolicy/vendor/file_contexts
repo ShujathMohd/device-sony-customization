@@ -48,6 +48,7 @@
 /mnt/vendor/persist/pc(/.*)?                u:object_r:simpin_cache_data_file:s0
 /mnt/vendor/persist/credmgr(/.*)?           u:object_r:persist_credmgr_file:s0
 /mnt/vendor/persist/credmgr.db              u:object_r:persist_credmgr_file:s0
+/mnt/vendor/persist/battery(/.*)?           u:object_r:persist_battery_file:s0
 
 # qns
 /mnt/qns(/.*)?                            u:object_r:qns_data_file:s0

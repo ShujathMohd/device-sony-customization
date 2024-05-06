@@ -31,6 +31,8 @@ allow vendor_init proc_sysctl_schedboost:file w_file_perms;
 
 allow wcnss_service vendor_shell_exec:file execute_no_trans;
 
+allow vendor_init persist_battery_file:dir create_dir_perms;
+
 set_prop(vendor_init, vendor_power_prop)
 
 # Allow vendor init to set cust_system_prop
@@ -48,3 +50,4 @@ get_prop(vendor_init, cust_debug_system_prop)
 get_prop(vendor_init, persist_debug_prop)
 
 get_prop(vendor_init, vendor_somc_cust_prop)
+
