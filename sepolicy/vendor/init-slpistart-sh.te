@@ -13,3 +13,8 @@ allow init-qcom-slpistart-sh sysfs_msm_subsys:file w_file_perms;
 
 # Ignore O_CREAT flag in bash file redirection:
 dontaudit init-qcom-slpistart-sh sysfs_msm_subsys:file create;
+
+allow init-qcom-slpistart-sh sysfs_slpi:dir r_dir_perms;
+allow init-qcom-slpistart-sh sysfs_slpi:file w_file_perms;
+
+
