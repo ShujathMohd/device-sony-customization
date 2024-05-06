@@ -47,4 +47,5 @@ allow hal_fingerprint_default sysfs_msm_subsys:dir search;
 allow hal_fingerprint_default sysfs_msm_subsys:file r_file_perms;
 
 allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file { ioctl w_file_perms };
 
