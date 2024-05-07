@@ -13,3 +13,22 @@ allowxperm tad tad_block_device:blk_file ioctl BLKGETSIZE;
 
 #For QMI sockets and IPCR Sockets
 allow tad self:qipcrtr_socket create_socket_perms_no_ioctl;
+
+#For dropping permisions from root and wakelock
+allow tad self:capability {
+    chown
+    setuid
+    setgid
+    setpcap
+    net_bind_service
+};
+
+#For Wakelocks
+wakelock_use(tad)
+
+allow tad persist_file:dir search;
+allow tad persist_rfs_file:dir create_dir_perms;
+allow tad persist_rfs_file:file create_file_perms;
+
+allow tad persist_rfs_shared_hlos_file:dir { open read setattr };
+allow tad vendor_tombstone_data_file:dir { search write add_name create setattr };
