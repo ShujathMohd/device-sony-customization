@@ -52,5 +52,8 @@ type qns_data_file, file_type;
 # Socket
 type tad_socket, file_type;
 
+# /sys/kernel/boot_wlan/boot_wlan
+type sysfs_boot_wlan, fs_type, sysfs_type;
+
 type timekeep_vendor_data_file, file_type, data_file_type;
 type persist_battery_file, file_type, vendor_persist_type;
