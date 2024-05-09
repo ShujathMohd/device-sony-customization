@@ -1,27 +1,31 @@
-genfscon sysfs /devices/virtual/input/input4/chip_pow    u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/virtual/input/input4/chip_pow    			u:object_r:sysfs_camera:s0
 
-genfscon sysfs /devices/platform/soc/soc:fpc1145		u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1145				u:object_r:sysfs_fingerprint:s0
 
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/activate    u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/duration    u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/state       u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator/trigger     u:object_r:sysfs_leds:s0
 
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight                                     u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000    u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d300    u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d800    u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,pwms@d000 u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,pwms@d000 	  u:object_r:sysfs_leds:s0
 
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_condition u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_hot u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_warm u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_batt_condition u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_condition 	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_hot 	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_aux_thresh_warm 	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_batt_condition 	u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_debug_log_interval u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wireless_condition u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_hot u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_warm u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/battery_soc u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power_supply/bms/battery_type  		u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_hot 	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/jeita_wlc_thresh_warm 	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/capacity                     	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/battery_soc		      	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power_supply/bms/battery_type  	u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061/power_supply/wireless                                                              u:object_r:sysfs_batteryinfo:s0
+
 genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys6/name	u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys4/name	u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys2/name      u:object_r:sysfs_ssr:s0
@@ -30,13 +34,14 @@ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys7/name	u:object_r:s
 genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys5/name	u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys3/name	u:object_r:sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys1/name	u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys6/name    u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys4/name   u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys2/name    u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys0/name  u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys5/name     u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys3/name  u:object_r:sysfs_ssr:s0
-genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys1/name     u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys6/name     u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys4/name    u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys2/name     u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys0/name   u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys5/name      u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys3/name   u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys1/name      u:object_r:sysfs_ssr:s0
+
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/pc_port/wakeup	u:object_r:sysfs_wakeup:s0 
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,usb-pdphy@1700/usbpd/usbpd0/wakeup		u:object_r:sysfs_wakeup:s0 
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/usb/wakeup		u:object_r:sysfs_wakeup:s0
@@ -45,7 +50,7 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power_supply/bms/wakeup			u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/main/wakeup		u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/dc/wakeup		u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:fpc1145/wakeup/wakeup	u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1145/wakeup/wakeup												u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /devices/virtual/switch/lid/state                u:object_r:sysfs_switch_lid:s0
 
@@ -59,8 +64,8 @@ genfscon sysfs /devices/platform/soc/soc:qcom,llccbw            u:object_r:sysfs
 genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw          u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw             u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,cpubw             u:object_r:sysfs_msm_subsys:s0
-genfscon proc /sys/kernel/sched_boost                           u:object_r:proc_sysctl_schedboost:s0
 genfscon debugfs /wlan0                                         u:object_r:debugfs_wlan:s0
+
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state          u:object_r:sysfs_graphics:s0
 
 # SSR
@@ -72,3 +77,91 @@ genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys4/restart_level u
 genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys5/restart_level    u:object_r:sysfs_ssr_toggle:s0
 genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys6/restart_level u:object_r:sysfs_ssr_toggle:s0
 genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys7/restart_level    u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/894000.i2c                                u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/a88000.i2c                                u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c                                u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0                     u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass                       u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp                     u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_rotator                 u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss                          u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi                         u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus                        u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing                       u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws                          u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/188101c.qcom,spss                         u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc                          u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/ac4a000.qcom,cci                          u:object_r:sysfs_camera:s0
+
+genfscon proc /irq                                    u:object_r:proc_irq:s0
+genfscon proc /sys/vm/swappiness                      u:object_r:proc_swappiness:s0
+genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_downmigrate           u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_upmigrate             u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_migration_fixup       u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_group_upmigrate       u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_group_downmigrate     u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_cfs_boost             u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/printk                      u:object_r:proc_kernel_printk:s0
+
+genfscon sysfs /devices/soc/soc:qcom,cpubw            u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/soc:qcom,mincpubw         u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0      u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4      u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/mdss_dsi_panel/pcc_profile    u:object_r:sysfs_pcc_profile:s0
+genfscon sysfs /devices/dsi_panel_driver/pcc_profile  u:object_r:sysfs_pcc_profile:s0
+genfscon sysfs /devices/virtual/smdpkt                u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/soc:qcom,memlat-cpu0               u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,memlat-cpu4               u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /bus/esoc/devices                                        u:object_r:sysfs_esoc:s0
+
+genfscon sysfs /devices/soc/soc:qcom,gpubw                              u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/soc:qcom,kgsl-hyp                           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/soc:qcom,ipa_fws@1e08000                    u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/virtual/rotator/mdss_rotator                    u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/0.qcom,rmtfs_sharedmem                      u:object_r:sysfs_rmtfs:s0
+
+genfscon sysfs /class/thermal                                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /module/msm_thermal                                      u:object_r:sysfs_thermal:s0
+
+genfscon sysfs /module/printk/parameters/console_suspend                u:object_r:sysfs_console_suspend:s0
+genfscon sysfs /module/diagchar/parameters/timestamp_switch             u:object_r:sysfs_timestamp_switch:s0
+
+genfscon sysfs /devices/virtual/graphics/fb0                            u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb1                            u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb2                            u:object_r:sysfs_graphics:s0
+
+genfscon sysfs /bus/msm_subsys                                          u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /module/subsystem_restart                                u:object_r:sysfs_msm_subsys_restart:s0
+genfscon sysfs /kernel/boot_adsp/boot                                   u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /kernel/boot_cdsp/boot                                   u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /kernel/boot_slpi/boot                                   u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /module/msm_performance                                  u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/soc:bt_wcn3990                     u:object_r:sysfs_bluetooth_writable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp                  u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws@1e08000           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/0.qcom,rmtfs_sharedmem             u:object_r:sysfs_rmtfs:s0
+genfscon sysfs /class/leds/vibrator                                     u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vibrator/leds/vibrator     u:object_r:sysfs_vibrator:s0
+
+genfscon sysfs /module/diagchar                                         u:object_r:sysfs_diag:s0
+
+genfscon debugfs /clk/debug_suspend                   u:object_r:debugfs_clk:s0
+genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
+genfscon debugfs /rpm_master_stats                    u:object_r:debugfs_rpm:s0
+genfscon debugfs /ion                                 u:object_r:debugfs_ion:s0
+genfscon debugfs /system_stats                        u:object_r:debugfs_rpm:s0
+genfscon debugfs /msm_ipc_router                      u:object_r:debugfs_ipc:s0
+genfscon debugfs /mdp                                 u:object_r:debugfs_mdp:s0
+genfscon debugfs /rmt_storage                         u:object_r:debugfs_rmt_storage:s0
+genfscon debugfs /icnss                               u:object_r:debugfs_icnss:s0
+
+
+

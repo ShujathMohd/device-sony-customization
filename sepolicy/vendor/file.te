@@ -6,13 +6,37 @@ type hal_camera_somc_socket, file_type;
 type sony_camera_device, file_type;
 type sysfs_camera, fs_type, sysfs_type;
 
+# Cashsrv
+type cashsvr_socket, file_type;
+type sysfs_input_name, sysfs_type, fs_type;
+type sysfs_input_control, sysfs_type, fs_type;
+type sysfs_tof_sensor, fs_type, sysfs_type;
+type sysfs_rgbc_sensor, fs_type, sysfs_type;
+type cashsvr_vendor_data_file, file_type, data_file_type;
+
+
 # Data
 type bluetooth_vendor_data_file, file_type, data_file_type;
+
+# DebugFS
+type debugfs_clk, debugfs_type, fs_type;
+type debugfs_rpm, debugfs_type, fs_type;
+type debugfs_ion, debugfs_type, fs_type;
+type debugfs_ipc, debugfs_type, fs_type;
+type debugfs_mdp, debugfs_type, fs_type;
+type debugfs_rmt_storage, debugfs_type, fs_type;
+type debugfs_icnss, debugfs_type, fs_type;
+# Disk schedulers
+type sysfs_block_queue, fs_type, sysfs_type;
 
 # Fingerprint sensor
 type fpc_vendor_data_file, file_type, data_file_type;
 type hal_fpc_fingerprint_socket, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
+type egistec_misc_data_file, file_type, data_file_type, core_data_file_type;
+
+# Glove Mode
+type sysfs_glove_mode, sysfs_type, fs_type;
 
 # idd
 type idd_data_file, file_type;
@@ -33,11 +57,15 @@ type sysfs_switch_lid, fs_type, sysfs_type;
 # LTALabel
 type lta_label, fs_type;
 
+# PCC Profile
+type sysfs_pcc_profile, sysfs_type, fs_type;
+
 # Persist
 type persist_credmgr_file, file_type;
 type persist_wlan_file, file_type;
 
 # Power
+type powerhal_socket, file_type; 
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
@@ -46,11 +74,29 @@ type debugfs_sched_features, debugfs_type, fs_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 
+# Proc
+type proc_irq, proc_type, fs_type;
+type proc_swappiness, proc_type, fs_type;
+type proc_kernel_printk, proc_type, fs_type;
+
 # QNS
 type qns_data_file, file_type;
 
+# RFS
+type rfs_system_file, file_type, vendor_file_type;
+
 # Socket
 type tad_socket, file_type;
+
+# Sysfs
+type sysfs_rmtfs, sysfs_type, fs_type;
+type sysfs_console_suspend, sysfs_type, fs_type;
+type sysfs_timestamp_switch, sysfs_type, fs_type;
+type sysfs_msm_subsys_restart, sysfs_type, fs_type;
+
+
+# Ucommsvr
+type ucommsvr_socket, file_type;
 
 # /sys/kernel/boot_wlan/boot_wlan
 type sysfs_boot_wlan, fs_type, sysfs_type;
