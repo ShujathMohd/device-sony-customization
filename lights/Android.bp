@@ -13,4 +13,5 @@ cc_binary {
         "Lights.cpp",
         "main.cpp",
     ],
+    overrides: ["android.hardware.light@2.0-service.sony"],
 }
