@@ -67,3 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Incremental FS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=true
+
+# SimpleKeyboard
+PRODUCT_PACKAGES += \
+    SimpleKeyboard
