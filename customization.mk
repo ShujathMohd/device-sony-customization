@@ -81,3 +81,7 @@ PRODUCT_PACKAGES += \
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
+
+# CarrierConfig Overlay
+PRODUCT_PACKAGES += \
+    CarrierConfigResCommon_Sys
