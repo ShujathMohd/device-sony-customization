@@ -30,3 +30,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(CUST_PATH)/sepolicy/private
 
 BUILD_BROKEN_PLUGIN_VALIDATION := soong-qti_kernel_headers_defaults
+
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
