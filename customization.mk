@@ -79,3 +79,8 @@ PRODUCT_PACKAGES += \
 # CarrierConfig Overlay
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon_Sys
+
+# Net/RIL
+PRODUCT_PACKAGES += \
+    libsqlite.vendor \
+    libnetutils.vendor
