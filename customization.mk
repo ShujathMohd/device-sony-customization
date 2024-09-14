@@ -33,6 +33,11 @@ TARGET_KERNEL_HEADERS := kernel/sony/msm-4.14/kernel
 
 TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(CUST_PATH)/rootdir/vendor/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
