@@ -33,3 +33,7 @@ BUILD_BROKEN_PLUGIN_VALIDATION := soong-qti_kernel_headers_defaults
 
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
+
+# Vulkan Rendering
+TARGET_USES_VULKAN := true
+
