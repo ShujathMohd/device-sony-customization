@@ -85,6 +85,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     SimpleKeyboard
 
+# Open Camera
+PRODUCT_PACKAGES += \
+    OpenCamera
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
