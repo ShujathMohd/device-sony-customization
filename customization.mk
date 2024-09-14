@@ -37,6 +37,11 @@ TARGET_FWK_DETECT_PATH := vendor/qcom/opensource/core-utils
 PRODUCT_COPY_FILES += \
     $(CUST_PATH)/rootdir/vendor/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# HIDL
+PRODUCT_HIDL_ENABLED := true
+
+PRODUCT_PACKAGES += \
+    hwservicemanager
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
